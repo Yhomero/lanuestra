@@ -1,0 +1,225 @@
+
+/*audel*/
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
+
+body{
+    font-family: 'Noto Serif', serif;
+}
+
+/* comienza la intro */
+
+.au-boton {
+ 
+    position: fixed;
+    right: 150px;
+    bottom: 150px;
+    z-index: 99;
+}
+/*Preload*/
+.center-content-preload {width: 100% !important;position: absolute;top: 50%;left: 50%;-ms-transform: translate(-50%, -50%);-webkit-transform: translate(-50%, -50%);-moz-transform: translate(-50%, -50%);-o-transform: translate(-50%, -50%);transform: translate(-50%, -50%);}
+div#au-intro { position: fixed; left: 0; top: 0; z-index: 99999999999 !important; width: 100%; height: 100%; overflow: hidden; background: #001c57; 
+    background-size: cover;background-position: center center;    background-color: #008ccc;
+} 
+
+.au-intro-gif {
+    width: 70%;
+    margin: 0 auto;
+    /* display: table; */
+    position: absolute;
+    top: 0%;
+    left: 15%;
+  /*  -ms-transform: translate(-50%, -50%);-webkit-transform: translate(-50%, -50%);-moz-transform: translate(-50%, -50%);-o-transform: translate(-50%, -50%);transform: translate(-50%, -50%);
+*/
+}  
+
+.au-intro-botella {
+animation-name: botella;
+animation-duration: 2s;
+animation-iteration-count: infinite;
+animation-delay: 2.5s;
+width: 70%;
+/* margin: 0 auto; */
+position: relative;
+top: 5%;
+left: 10%;    
+}  
+
+
+@keyframes botella{
+    0%{
+        transform: rotate(0) scale(.5); 
+    }
+    50%{
+        transform: rotate(90deg) scale(1.0);
+    }
+    100%{
+        transform: rotate(0deg) scale(.5);
+    }
+}    
+
+.au-intro-tarro{
+    position: relative;
+    width: 15%;
+    top: 30%;
+    left: -10%;    
+    cursor: pointer;
+    }
+    
+.mayor18{
+    position: absolute;
+    width: 50%;
+    top: 75%;
+    color: white;
+    text-shadow: 1px 2px black;
+    text-align: center;    
+    left: 22%;
+}
+
+@media screen and (max-width: 768px){
+    .au-intro-botella{display: none;}
+    .au-intro-tarro {width: 70%; left: 18%; top: 25%;}
+
+}
+
+
+div.menu-bottom {position: absolute;bottom: 5%;text-align: center;width: 100%;font-family: Gotham-Book;color: white;font-size: 8px;left: 0;padding: 20px;padding-left: 0px;padding-right: 0px;}
+img.social-icon {display: inline-block;padding: 5px;padding-bottom: 13px;width: 31px;}
+img.social-icon.icon-fb {width: 19px;}
+div.menu-bottom p {margin-bottom: 3px;}
+div.menu-bottom p.bold {font-family: Gotham-Bold;}
+
+
+body {
+    font-family: 'Red Rose';
+}
+
+li{
+    margin-right: 20px;
+    font-family: 'Red Rose';
+}
+
+.navbar{
+    /*position: absolute;*/
+    /*background: rgba(0,154,224,0.45) !important;*/
+    background: rgba(0,0,0,0.45) !important;
+    width: 100%;
+    z-index: 10;
+    border-bottom: 1px solid rgba(256,256,256,0.2);
+}
+
+.nav-link{
+    color: #fff !important;
+   /* border-bottom: 1px solid #fff;
+    border-radius: 20px;
+*/    margin-right: 5px;
+    
+}
+
+.nav-link:hover{
+  /*  border: 1px solid  white;*/
+    border-bottom: 1px solid rgba(251,251,251,0.9);
+    border-top: 1px solid black;
+   /* border-top: 1px solid #fff; */
+    border-radius: 20px;
+    background-color: rgba(0,0,0,0.9);
+    
+}
+
+.logo-peque{
+    margin-left: 10%;
+}
+
+.au-f{
+    align-items: center !important;
+}
+.au-f-white{
+color: rgba(251,251,251,.9) !important;
+font-size: 30px !important;
+}
+
+.au-f-black{
+    color: rgba(0,0,0,1) !important;
+    font-size: 35px !important;
+}
+.au-f-black-1{
+    color: rgba(0,0,0,1) !important;
+    font-size: 30px !important;
+}
+.au-w-todo{
+    padding: 0px;
+    margin: 0px;
+}
+.au-w-padding{
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+}
+
+.au-espacio{
+    height: 80px;
+}
+
+.au-sin-dot{
+    list-style-type: none;
+}
+
+.au-bg-white{
+    background-color: white;
+    color: black;
+}
+
+.au-fc-black{
+    color: black;
+}
+
+.au-social{
+    position: fixed;
+    left: 0;
+    top: 400px;
+    z-index: 100;
+}
+
+.au-social ul li a{
+    display: inline-block;
+    color: #fff;
+    /*background: black;*/
+    padding: 10px 15px;
+    text-decoration: none;
+    transition: 500ms ease;
+  
+}
+
+.au-social ul li a:hover{
+    padding-left: 30px;
+    background: rgba(0,0,0,0.45);
+}
+.au-social ul li .icon-facebook2{
+    background: #4267B2;
+}
+
+.au-social ul li .icon-instagram{
+    background:#EF372C;
+}
+
+.au-social ul li .icon-twitter{
+    background:#00A2F3;
+}
+    
+@media (min-width: 768px){
+.au-effect{
+    transition: 1s;
+    opacity: .9;
+}
+
+.au-effect:hover{
+    transform: scale(1.08);
+    opacity: 1;
+}
+
+}
+
+.au-btn-subir{
+    /* position: fixed;
+   text-align: end; */
+    z-index: 100;
+}
